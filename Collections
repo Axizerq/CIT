@@ -1,0 +1,26 @@
+package TEST;
+
+import java.util.*;
+import java.io.*;
+
+public class ArrayListTest {
+     ArrayList<Integer> lst = new ArrayList();
+     Random generator = new Random();
+
+     void addRandom() {
+           lst.add(new Integer(generator.nextInt()));
+     }
+
+
+     public String toString() {
+          return lst.toString();
+     }
+
+     public static void main(String args[]) {
+         ArrayListTest tst = new ArrayListTest();
+         for(int i = 0; i < 100; i++ )
+                tst.addRandom();
+          System.out.println("Hundred random numbers: "+tst.toString());
+     }
+}
+      
