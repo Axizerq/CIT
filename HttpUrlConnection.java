@@ -4,7 +4,7 @@ import java.io.*;
 public class HttpUrlConnection {
     public static void main(String[] args) throws Exception{
         try{
-            URL Link = new URL("http://www.google.com");
+            URL Link = new URL("http://www.facebook.com");
             HttpURLConnection conn = (HttpURLConnection) 
             Link.openConnection();
 
