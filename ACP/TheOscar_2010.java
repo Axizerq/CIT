@@ -7,6 +7,5 @@ public class TheOscar_2010 implements Handler {
 	     System.out.println("District 9");
 	     System.out.println("Up in the Air");
 	     System.out.println("A Serious Man");
-	     
 	 }
 }
