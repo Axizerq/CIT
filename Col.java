@@ -99,5 +99,23 @@ public class Col {
 			String iString = (String) iterator.next();
 			System.out.println(iString);
 		}
+	
+	public static void Queue() {
+		PriorityQueue iQueue = new PriorityQueue();
+		 
+                iQueue.add(1);
+                iQueue.add(2);
+                iQueue.add(3);
+ 
+                for(int i: iQueue)
+                   System.out.println(i);
+                iQueue.remove(2);
+                System.out.println("After removing:");
+                for(int i: iQueue)
+                   System.out.println(i);
+        
+                iQueue.offer(4);
+                   for(int i: iQueue)
+            System.out.println(i);
 	}
 }
