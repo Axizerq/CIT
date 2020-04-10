@@ -7,6 +7,5 @@ public class TheOscar_2008 implements Handler{
 	     System.out.println("There Will Be Blood");
 	     System.out.println("Juno");
 	     System.out.println("Michael Clayton");
-	     
 	 }
 }
