@@ -18,6 +18,7 @@ public class Col {
 		iMap.put("Spain", "4");
 		iMap.put("Swiden", "5");
 		iMap.put("Norway", "6");
+		iMap.put("Spain", "4");
 		System.out.println("The largest countries in Europe (HashMap)");
 		System.out.println("\t" + iMap);
 	
