@@ -50,7 +50,7 @@ public class Col {
 		iList.add("Cigar Galaxy");
 		iList.add("Solar System");
 		System.out.println();
-		System.out.println("These are some pretty GIRL names! (Using an ArrayList)");
+		System.out.println("There is a few galaxies names:");
 		System.out.println("\t" + iList);
 		
 		iList.remove("Solar System");
@@ -87,6 +87,11 @@ public class Col {
 		System.out.println("Added Los Angeles Chargers");
 		iSet.add("Los Angeles Chargers");
 		System.out.println("\t" + iSet);
+		
+		// Sets do not accept duplicate items:
+                iSet.add("Baltimore Ravens");
+                iSet.add("Philadelphia Eagles");
+                System.out.println("You can't add the same value to the list" + iSet);
 		
 		Iterator iterator = iSet.iterator();
 		while(iterator.hasNext()) {
