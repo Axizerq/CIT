@@ -21,6 +21,8 @@ public class HttpUrlConnection {
             }
             reader.close();
             
+            System.out.println(response.toString()); 
+            
             System.out.println("Response: " + conn.getContentType());
 
             if(conn.getContentType() != null){
