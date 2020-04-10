@@ -1,5 +1,6 @@
 import java.net.*;
 import java.io.*;
+import java.io.BufferedReader;
 
 public class HttpUrlConnection {
     public static void main(String[] args) throws Exception{
@@ -7,7 +8,19 @@ public class HttpUrlConnection {
             URL Link = new URL("http://www.facebook.com");
             HttpURLConnection conn = (HttpURLConnection) 
             Link.openConnection();
-
+            
+            conn.setRequestMethod("GET");
+            
+            BufferedReader reader = new BufferedReader(new InputStreamReader
+            		(conn.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+            
+            while ((inputLine = reader.readLine()) != null) {
+                response.append(inputLine);
+            }
+            reader.close();
+            
             System.out.println("Response: " + conn.getContentType());
 
             if(conn.getContentType() != null){
