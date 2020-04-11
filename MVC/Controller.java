@@ -4,17 +4,14 @@ import java.io.InputStreamReader;
 
 public class Controller {
 
-    // Reference to the view and the model
     private Model model;
     private View view;
 
-    // Constructor
     public Controller (Model model, View view) {
         this.model = model;
         this.view = view;
     }
 
-    // Method run
     public void run() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -26,7 +23,7 @@ public class Controller {
             int num = Integer.parseInt(exit);
             int number = num;
   
-            number = modelEx.yourNum();
+            number = model.yourNum();
             viewEx.printNum(num);
             viewEx.printText2();
         }
