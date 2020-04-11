@@ -7,13 +7,11 @@ public class View {
     }
 
     public void printText() {
-        System.out.print("\"exit\" to exit this program! \nPlease enter your " +
-                "number: ");
+        System.out.print("\"exit\" to exit this program! \nPlease enter your number: ");
     }
 
     public void printText2() {
-        System.out.print("\"exit\" to exit this program! \nIf you want you can " +
-                "enter another number: ");
+        System.out.print("\"exit\" to exit this program! \nYou can enter another number: ");
     }
 
     public void printNum(int num) {
