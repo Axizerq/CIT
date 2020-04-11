@@ -15,7 +15,7 @@ public class Count implements Runnable {
 		try {
 			int even = 2;
       int result = 0;
-			for(int i = 1; i < 12 ; i++)  {
+			for(int i = 1; i < 15 ; i++)  {
 				if (i % even == 0) {
 					System.out.println(i + " is an even number");
 					Thread.sleep(1000);
