@@ -9,26 +9,25 @@ public class Count implements Runnable {
 		
 		iThread.start();
 		System.out.println(iThread + "was Started");
-	}
+	        }
 	public void run() {
-
 		try {
 			int even = 2;
-      int result = 0;
+                        int result = 0;
 			for(int i = 1; i < 15 ; i++)  {
 				if (i % even == 0) {
 					System.out.println(i + " is an even number");
 					Thread.sleep(1000);
-          result += i;
-          System.out.println("Result of sum of even numbers is " + result);
-          } 
+          				result += i;
+          				System.out.println("Result of sum of even numbers is " + result);
+         					   } 
 				else {
-					System.out.println(i + " is an odd number");
-					Thread.sleep(1000);
-          result += i;
-          System.out.println("Result of sum of odd numbers is " + result);
-          }
-			                          }
+			System.out.println(i + " is an odd number");
+			Thread.sleep(1000);
+          		result += i;
+          		System.out.println("Result of sum of odd numbers is " + result);
+         	     		    }
+		}
 		    }
 		catch(InterruptedException e)
 		{
@@ -36,5 +35,4 @@ public class Count implements Runnable {
 		}
 		System.out.println("The Thread has finished");
 	  }
-
 }
