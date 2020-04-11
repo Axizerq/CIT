@@ -23,5 +23,4 @@ public class View {
     public void printNum(int num) {
         System.out.println("\nYour favorite number is: " + num + "\n");
     }
-
 }
