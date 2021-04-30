@@ -1,0 +1,28 @@
+public class Col {
+ 
+	public static void main(String[] args) {
+		
+		List iList = new ArrayList();
+		iList.add("Andromeda");
+		iList.add("Black Eye Galaxy");
+		iList.add("Bode's Galaxy");
+		iList.add("Cartwheel Galaxy");
+		iList.add("Cigar Galaxy");
+		iList.add("Solar System");
+		System.out.println();
+		System.out.println("There is a few galaxies names:");
+		System.out.println("\t" + iList);
+		
+		iList.remove("Solar System");
+		System.out.println("Remove the Solar System - it's not a galaxy!");
+		System.out.println("\t" + iList);
+		
+		iList.add("Milky Way");
+		System.out.println("Added the Milky Way - that's correct.");
+		System.out.println("\t" + iList);
+		
+		Iterator iterator = iList.iterator();
+		while(iterator.hasNext()) {
+			String iString = (String) iterator.next();
+			System.out.println(iString);
+	}
