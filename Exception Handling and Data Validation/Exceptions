@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        while(true) {
+            try {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Enter the first number: ");
+                int num1 = in.nextInt();
+                System.out.print("Enter the second number: ");
+                int num2 = in.nextInt();
+                Division(num1, num2);
+                return;
+            } catch (InputMismatchException e) {
+                System.out.println("You should use numbers, not letters!");
+            } finally {
+                System.out.println("You can't use letters or divide by 0 here.");
+            }
+        }
+    }
+
+    public static void Division(float num1, float num2) {
+        try {
+            if (num2 == 0) throw new ArithmeticException();
+            System.out.println(num1 / num2);
+            return;
+        } catch (ArithmeticException e) {
+            System.out.println("You can't devide by 0!");
+        }
+    }
+}
